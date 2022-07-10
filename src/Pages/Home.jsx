@@ -1,7 +1,27 @@
-import React from 'react'
+import React from 'react';
 
-const Home = () => {
-  return <div> THIS IS THE HOME PAGE </div>
+import AboutUs from '../container/AboutUs/AboutUs.jsx';
+import Chef from '../container/Chef/Chef.jsx';
+import FindUs from '../container/FindUs/FindUs.jsx';
+import Gallery from '../container/Gallery/Gallery.jsx';
+import Header from '../container/Header/Header.jsx';
+import Intro from '../container/Intro/Intro.jsx';
+import Laurels from '../container/Laurels/Laurels.jsx';
+import SpecialMenu from '../container/Menu/SpecialMenu.jsx';
+
+function Home() {
+	return (
+		<div>
+			<Header />
+			<AboutUs />
+			<SpecialMenu />
+			<Chef />
+			<Intro />
+			<Laurels />
+			<Gallery />
+			<FindUs />
+		</div>
+	);
 }
 
-export default Home
+export default Home;
