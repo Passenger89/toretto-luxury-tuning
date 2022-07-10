@@ -22,16 +22,16 @@ function Navbar() {
 				<li className={styles.app__navbar_li}>
 					<Link to="/home">Home</Link>
 				</li>
-				<li className={styles.navbar__li}>
+				<li className={styles.app__navbar_li}>
 					<Link to="/about">About</Link>
 				</li>
-				<li className={styles.navbar__li}>
+				<li className={styles.app__navbar_li}>
 					<Link to="/menu">Menu</Link>
 				</li>
-				<li className={styles.navbar__li}>
+				<li className={styles.app__navbar_li}>
 					<Link to="/awards">Awards</Link>
 				</li>
-				<li className={styles.navbar__li}>
+				<li className={styles.app__navbar_li}>
 					<Link to="/contact">Contact</Link>
 				</li>
 			</ul>

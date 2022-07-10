@@ -1,0 +1,61 @@
+@use '../../scss/variables' as var;
+
+.wrapper {
+	background-color: var.$color-black;
+
+	&__info {
+		flex: 1;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+		flex-direction: column;
+
+		.info__h1 {
+			font-family: var.$font-base;
+			color: var.$color-golden;
+			letter-spacing: 0.04em;
+			text-transform: uppercase;
+			line-height: 1.1;
+			font-size: 5.625rem;
+		}
+		.info__p {
+			margin-block: 2rem;
+		}
+	}
+
+	&__image {
+		flex: 1;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		margin-left: 2rem;
+
+		img {
+			width: 80%;
+		}
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.wrapper__image {
+		margin-inline: auto;
+		margin-block: 2.75rem;
+
+		img {
+			width: 100%;
+		}
+	}
+}
+@media screen and (max-width: 650px) {
+	.wrapper__image {
+		margin-inline: auto;
+		margin-block: 2.75rem;
+
+		img {
+			width: 100%;
+		}
+	}
+}

@@ -31,6 +31,7 @@
 		cursor: pointer;
 
 		a {
+			color: var.$color-white;
 			&:hover {
 				color: var.$color-gray;
 			}
@@ -91,6 +92,9 @@
 		margin-block: 1rem;
 		cursor: pointer;
 		color: var.$color-golden;
+		font-size: 2rem;
+		text-align: center;
+		font-family: var.$font-base;
 
 		&:hover {
 			color: var.$color-white;
