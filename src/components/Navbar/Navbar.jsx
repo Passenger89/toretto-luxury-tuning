@@ -10,7 +10,7 @@ import images from '../../constants/images.js';
 import styles from './Navbar.module.scss';
 
 function Navbar() {
-	const navToggle = useSelector((state) => state.toggle.value);
+	const navToggle = useSelector((state) => state.toggleNav.value);
 	const dispatch = useDispatch();
 
 	return (

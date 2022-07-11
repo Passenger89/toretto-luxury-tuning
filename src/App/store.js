@@ -1,9 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit';
 import toggleNavReducer from '../features/toggleNav/toggleNavSlice.js';
+import playVideoReducer from '../features/playVideo/playVideoSlice.js';
 
 const store = configureStore({
 	reducer: {
-		toggle: toggleNavReducer,
+		toggleNav: toggleNavReducer,
+		toggleVideo: playVideoReducer,
 	},
 });
 

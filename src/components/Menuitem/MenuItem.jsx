@@ -33,6 +33,6 @@ export default MenuItem;
 
 MenuItem.propTypes = {
 	title: PropTypes.string.isRequired,
-	price: PropTypes.number.isRequired,
+	price: PropTypes.string.isRequired,
 	tags: PropTypes.string.isRequired,
 };
