@@ -1,7 +1,6 @@
 import React from 'react';
 
 import AboutUs from '../container/AboutUs/AboutUs.jsx';
-import Chef from '../container/Chef/Chef.jsx';
 import FindUs from '../container/FindUs/FindUs.jsx';
 import Gallery from '../container/Gallery/Gallery.jsx';
 import Header from '../container/Header/Header.jsx';
@@ -15,7 +14,6 @@ function Home() {
 			<Header />
 			<AboutUs />
 			<SpecialMenu />
-			<Chef />
 			<Intro />
 			<Laurels />
 			<Gallery />
