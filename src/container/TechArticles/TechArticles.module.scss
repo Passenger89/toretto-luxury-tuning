@@ -1,0 +1,25 @@
+@use '../../scss/variables' as var;
+
+.techArticles {
+	flex-direction: column;
+	background-color: var.$color-white;
+
+	&_cards {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 1rem;
+	}
+
+	&_title {
+		margin-bottom: 2rem;
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 650px) {
+	.techArticles_cards {
+		flex-direction: column;
+		align-items: center;
+		max-width: 100%;
+	}
+}
