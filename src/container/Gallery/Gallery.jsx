@@ -4,7 +4,7 @@ import {
 	BsArrowLeftShort,
 	BsArrowRightShort,
 } from 'react-icons/bs';
-import SubHeading from '../../components/SubHeading/SubHeading.jsx';
+import Button from '../../components/Button/Button.jsx';
 import images from '../../constants/images.js';
 import styles from './Gallery.module.scss';
 
@@ -13,6 +13,10 @@ const galleryImages = [
 	images.gallery02,
 	images.gallery03,
 	images.gallery04,
+	images.gallery05,
+	images.gallery06,
+	images.gallery07,
+	images.gallery08,
 ];
 
 function Gallery() {
@@ -31,15 +35,12 @@ function Gallery() {
 	return (
 		<div className={`${styles.gallery} flex__center`}>
 			<div className={styles.gallery_content}>
-				<SubHeading title="Instagram" />
-				<h1 className="headtext__cormorant">Photo Gallery</h1>
-				<p className="p__opensans" style={{ color: '#AAA', marginTop: '2rem' }}>
+				<h1 className="headtext__cormorant_black">Photo Gallery</h1>
+				<p className="p__opensans_black" style={{ marginTop: '2rem' }}>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat
 					mattis ipsum turpis elit elit scelerisque egestas mu.
 				</p>
-				<button type="button" className="custom__button">
-					View More
-				</button>
+				<Button text="View More" />
 			</div>
 
 			<div className={styles.gallery_images}>

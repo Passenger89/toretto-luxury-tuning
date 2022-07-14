@@ -1,82 +1,49 @@
 import images from './images.js';
 
-const wines = [
+const articles = [
 	{
-		title: 'Chapel Hill Shiraz',
-		price: '$56',
-		tags: 'AU | Bottle',
+		imgUrl: images.turbocharger,
+		title: 'TurboCharger Selection Guide',
+		path: '/turbocharger',
 	},
 	{
-		title: 'Catena Malbee',
-		price: '$59',
-		tags: 'AU | Bottle',
+		imgUrl: images.fuelinjector,
+		title: 'Fuel Injector Selection Guide',
+		path: '/fuelinjector',
 	},
 	{
-		title: 'La Vieillw Rose',
-		price: '$44',
-		tags: 'FR | 750 ml',
+		imgUrl: images.efi,
+		title: 'What is EFI Tuning?',
+		path: 'efi',
 	},
 	{
-		title: 'Rhino Pale Ale',
-		price: '$31',
-		tags: 'CA | 750 ml',
-	},
-	{
-		title: 'Irish Guinness',
-		price: '$26',
-		tags: 'IE | 750 ml',
-	},
-];
-
-const cocktails = [
-	{
-		title: 'Aperol Sprtiz',
-		price: '$20',
-		tags: 'Aperol | Villa Marchesi prosecco | soda | 30 ml',
-	},
-	{
-		title: "Dark 'N' Stormy",
-		price: '$16',
-		tags: 'Dark rum | Ginger beer | Slice of lime',
-	},
-	{
-		title: 'Daiquiri',
-		price: '$10',
-		tags: 'Rum | Citrus juice | Sugar',
-	},
-	{
-		title: 'Old Fashioned',
-		price: '$31',
-		tags: 'Bourbon | Brown sugar | Angostura Bitters',
-	},
-	{
-		title: 'Negroni',
-		price: '$26',
-		tags: 'Gin | Sweet Vermouth | Campari | Orange garnish',
+		imgUrl: images.datalogging,
+		title: 'Datalogging: Why You Need It',
+		path: 'datalogging',
 	},
 ];
 
 const awards = [
 	{
 		imgUrl: images.award02,
-		title: 'Bib Gourmond',
+		title: 'Customer Contact Leader Of The Year',
 		subtitle: 'Lorem ipsum dolor sit amet, consectetur.',
 	},
 	{
 		imgUrl: images.award01,
-		title: 'Rising Star',
+		title: 'Achievement in On the Rise',
 		subtitle: 'Lorem ipsum dolor sit amet, consectetur.',
 	},
 	{
 		imgUrl: images.award05,
-		title: 'AA Hospitality',
+		title: 'Most Innovative Company of the Year',
 		subtitle: 'Lorem ipsum dolor sit amet, consectetur.',
 	},
 	{
 		imgUrl: images.award03,
-		title: 'Outstanding Chef',
+		title: 'Best Place to Work',
 		subtitle: 'Lorem ipsum dolor sit amet, consectetur.',
 	},
 ];
 
-export default { wines, cocktails, awards };
+export default { awards, articles };

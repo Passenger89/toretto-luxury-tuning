@@ -59,7 +59,7 @@ module.exports = {
 	plugins: [
 		new HtmlWebpackPlugin({
 			// Will rebuild the dist folder
-			title: 'Restaurant',
+			title: "TLT | Toretto's Luxury Tuning",
 			filename: 'index.html',
 			template: 'src/index.html',
 		}),

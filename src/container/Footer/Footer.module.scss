@@ -10,13 +10,13 @@
 	align-items: center;
 	flex-direction: column;
 
-	background: var.$color-black;
+	background: var.$color-white;
 	padding-top: 0;
 
 	&_headtext {
 		font-family: var.$font-base;
-		color: var.$color-white;
-		font-weight: 400;
+		color: var.$color-black;
+		font-weight: 800;
 		letter-spacing: 0.04em;
 		text-transform: capitalize;
 		font-size: 2rem;
@@ -34,6 +34,7 @@
 		padding: 0 2rem;
 
 		&_logo {
+			align-self: stretch;
 			img:first-child {
 				width: 210px;
 				margin-bottom: 0.75rem;
@@ -47,13 +48,13 @@
 			margin-top: 0.5rem;
 
 			svg {
-				color: var.$color-white;
+				color: var.$color-black;
 				margin: 0.5rem;
 				font-size: 1.5rem;
 				cursor: pointer;
 
 				&:hover {
-					color: var.$color-golden;
+					color: var.$color-halogen;
 				}
 			}
 		}

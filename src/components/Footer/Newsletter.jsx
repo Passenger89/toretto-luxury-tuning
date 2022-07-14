@@ -1,15 +1,16 @@
 import React from 'react';
+import Button from '../Button/Button.jsx';
 
-import SubHeading from '../SubHeading/SubHeading.jsx';
 import styles from './Newsletter.module.scss';
 
 function Newsletter() {
 	return (
 		<div className={styles.newsletter}>
 			<div className={`${styles.newsletter_heading} flex__center`}>
-				<SubHeading title="Newsletter" />
-				<h1 className="headtext__cormorant">Subscribe To Our Newsletter</h1>
-				<p className="p__opensans">And never miss the latest updates!</p>
+				<h1 className="headtext__cormorant_black">
+					Subscribe To Our Newsletter
+				</h1>
+				<p className="p__opensans_black">And never miss the latest updates!</p>
 			</div>
 			<div className={`${styles.newsletter_input} flex__center`}>
 				<input
@@ -18,9 +19,7 @@ function Newsletter() {
 					id=""
 					placeholder="Enter your email address"
 				/>
-				<button className="custom__button" type="button">
-					Subscribe
-				</button>
+				<Button text="Subscribe" />
 			</div>
 		</div>
 	);

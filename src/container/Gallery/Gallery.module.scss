@@ -4,7 +4,7 @@
 	display: flex;
 	flex-direction: row;
 
-	background: var.$color-black;
+	background: var.$color-white;
 	padding: 4rem 0 4rem 6rem;
 }
 
@@ -77,14 +77,14 @@
 }
 
 .gallery_arrow_icon {
-	color: var.$color-golden;
+	color: var.$color-blue;
 	font-size: 2rem;
 	cursor: pointer;
-	background-color: var.$color-black;
+	background-color: var.$color-white;
 	border-radius: 5px;
 
 	&:hover {
-		color: var.$color-white;
+		color: var.$color-halogen;
 	}
 }
 
@@ -130,6 +130,8 @@
 
 	.gallery_content {
 		min-width: 100%;
+		text-align: end;
+		align-items: end;
 	}
 
 	.gallery_images_card {

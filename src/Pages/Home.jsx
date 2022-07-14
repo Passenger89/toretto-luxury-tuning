@@ -6,14 +6,14 @@ import Gallery from '../container/Gallery/Gallery.jsx';
 import Header from '../container/Header/Header.jsx';
 import Intro from '../container/Intro/Intro.jsx';
 import Laurels from '../container/Laurels/Laurels.jsx';
-import SpecialMenu from '../container/Menu/SpecialMenu.jsx';
+import TechArticles from '../container/TechArticles/TechArticles.jsx';
 
 function Home() {
 	return (
 		<div>
 			<Header />
 			<AboutUs />
-			<SpecialMenu />
+			<TechArticles />
 			<Intro />
 			<Laurels />
 			<Gallery />

@@ -3,17 +3,6 @@
 .aboutus {
 	position: relative;
 
-	&_overlay {
-		position: absolute;
-		inset: 0;
-
-		img {
-			width: 391px;
-			height: 415px;
-			z-index: 0;
-		}
-	}
-
 	&_content {
 		width: 100%;
 		z-index: 2;
@@ -29,11 +18,10 @@
 
 			p {
 				margin: 2rem 0;
-				color: var.$color-grey;
 			}
 		}
 
-		&_knife {
+		&_nitron {
 			margin: 2rem 4rem;
 
 			img {
@@ -52,14 +40,13 @@
 
 			p {
 				margin: 2rem 0;
-				color: var.$color-grey;
 			}
 		}
 	}
 }
 
 @media screen and (max-width: 2000px) {
-	.aboutus_content_knife img {
+	.aboutus_content_nitron img {
 		height: 1110px;
 	}
 
@@ -72,7 +59,7 @@
 	.aboutus_content {
 		flex-direction: column;
 	}
-	.aboutus_content_knife {
+	.aboutus_content_nitron {
 		margin: 4rem 0rem;
 	}
 }

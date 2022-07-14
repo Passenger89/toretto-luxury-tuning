@@ -2,8 +2,6 @@
 
 .newsletter {
 	padding: 2rem 4rem;
-	border: 1px solid var.$color-golden;
-	background: var.$color-black;
 }
 
 .newsletter_heading {
@@ -16,20 +14,19 @@
 	margin-top: 3rem;
 
 	input {
-		width: 620px;
-		border: 1px solid var.$color-golden;
+		width: 100%;
 		border-radius: 5px;
 		font-size: 1rem;
+		font-weight: 800;
 		font-family: var.$font-base;
-		color: var.$color-white;
+		color: var.$color-black;
 
-		margin-right: 2rem;
 		padding: 0.75rem 1rem;
-		background: var.$color-black;
-	}
+		background: var.$color-white;
 
-	button {
-		width: max-content;
+		&:focus {
+			outline-color: var.$color-halogen;
+		}
 	}
 }
 
@@ -47,7 +44,7 @@
 
 		input {
 			margin: 0 0 2rem 0;
-			width: 100%;
+			width: 90%;
 		}
 	}
 }

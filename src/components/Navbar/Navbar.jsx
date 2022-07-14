@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import { GiHamburgerMenu } from 'react-icons/gi';
-import { MdOutlineRestaurantMenu } from 'react-icons/md';
+import { RiToolsFill } from 'react-icons/ri';
 import { useSelector, useDispatch } from 'react-redux';
 import { open, close } from '../../features/toggleNav/toggleNavSlice.js';
 
@@ -16,17 +16,17 @@ function Navbar() {
 	return (
 		<nav className={styles.app__navbar}>
 			<div className={styles.app__navbar_logo}>
-				<img src={images.gericht} alt="app logo" />
+				<img src={images.mainlogo} alt="app logo" />
 			</div>
 			<ul className={styles.app__navbar_ul}>
 				<li className={styles.app__navbar_li}>
 					<Link to="/home">Home</Link>
 				</li>
 				<li className={styles.app__navbar_li}>
-					<Link to="/about">About</Link>
+					<Link to="/about">Features</Link>
 				</li>
 				<li className={styles.app__navbar_li}>
-					<Link to="/menu">Menu</Link>
+					<Link to="/menu">Quote</Link>
 				</li>
 				<li className={styles.app__navbar_li}>
 					<Link to="/awards">Awards</Link>
@@ -41,7 +41,7 @@ function Navbar() {
 				</Link>
 				<div />
 				<Link to="/" className={styles.bookTable__link}>
-					Book Table
+					Book Appointment
 				</Link>
 			</div>
 			<div className={styles.app__navbar_smallscreen}>
@@ -57,7 +57,7 @@ function Navbar() {
 					<div
 						className={`${styles.app__navbar_smallscreen_overlay} flex__center slide_down`}
 					>
-						<MdOutlineRestaurantMenu
+						<RiToolsFill
 							fontSize={27}
 							className={styles.overlay__close}
 							onClick={() => {
@@ -70,10 +70,10 @@ function Navbar() {
 								<Link to="/home">Home</Link>
 							</li>
 							<li className={styles.navbar__li_smallscreen}>
-								<Link to="/about">About</Link>
+								<Link to="/about">Features</Link>
 							</li>
 							<li className={styles.navbar__li_smallscreen}>
-								<Link to="/menu">Menu</Link>
+								<Link to="/menu">Quote</Link>
 							</li>
 							<li className={styles.navbar__li_smallscreen}>
 								<Link to="/awards">Awards</Link>
