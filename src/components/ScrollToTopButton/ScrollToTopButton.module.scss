@@ -1,0 +1,17 @@
+.wrapper {
+	.button {
+		position: fixed;
+		z-index: 999;
+		bottom: 25px;
+		left: 25px;
+		padding: 0.5rem;
+		aspect-ratio: 1/2;
+		font-size: 50px;
+		background-color: hsl(180, 2%, 92%);
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 10px;
+	}
+}

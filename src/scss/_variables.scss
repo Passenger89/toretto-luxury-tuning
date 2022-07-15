@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&family=Neonderthaw&display=swap');
 /* ----------------- */
 /* Custom properties */
 /* ----------------- */
@@ -16,8 +16,12 @@ $color-halogen: hsl(207, 90%, 54%);
 /* font-families */
 $font-base: 'Cormorant Upright', serif;
 $font-alt: 'Open Sans', sans-serif;
+$font-neon: 'Neonderthaw', cursive;
 
 /* font-sizes */
+$fs-800: 2rem;
+$fs-700: 1.75rem;
+$fs-600: 1.5rem;
 $fs-500: 1.25rem;
 $fs-400: 1rem;
 $fs-300: 0.75rem;

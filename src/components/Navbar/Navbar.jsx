@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { RiToolsFill } from 'react-icons/ri';
@@ -13,6 +13,8 @@ function Navbar() {
 	const navToggle = useSelector((state) => state.toggleNav.value);
 	const dispatch = useDispatch();
 
+	const classNameFunc = ({ isActive }) => (isActive ? styles.active : '');
+
 	return (
 		<nav className={styles.app__navbar}>
 			<div className={styles.app__navbar_logo}>
@@ -20,29 +22,39 @@ function Navbar() {
 			</div>
 			<ul className={styles.app__navbar_ul}>
 				<li className={styles.app__navbar_li}>
-					<Link to="/home">Home</Link>
+					<NavLink to="/" className={classNameFunc}>
+						Home
+					</NavLink>
 				</li>
 				<li className={styles.app__navbar_li}>
-					<Link to="/about">Features</Link>
+					<NavLink to="/about" className={classNameFunc}>
+						About
+					</NavLink>
 				</li>
 				<li className={styles.app__navbar_li}>
-					<Link to="/menu">Quote</Link>
+					<NavLink to="/quote" className={classNameFunc}>
+						Quote
+					</NavLink>
 				</li>
 				<li className={styles.app__navbar_li}>
-					<Link to="/awards">Awards</Link>
+					<NavLink to="/awards" className={classNameFunc}>
+						Awards
+					</NavLink>
 				</li>
 				<li className={styles.app__navbar_li}>
-					<Link to="/contact">Contact</Link>
+					<NavLink to="/contact" className={classNameFunc}>
+						Contact
+					</NavLink>
 				</li>
 			</ul>
 			<div className={styles.app__navbar_login}>
-				<Link to="/login" className={styles.login__link}>
+				<NavLink to="/" className={styles.login__link}>
 					Log In / Register
-				</Link>
+				</NavLink>
 				<div />
-				<Link to="/" className={styles.bookTable__link}>
+				<NavLink to="/" className={styles.bookTable__link}>
 					Book Appointment
-				</Link>
+				</NavLink>
 			</div>
 			<div className={styles.app__navbar_smallscreen}>
 				<GiHamburgerMenu
@@ -67,19 +79,19 @@ function Navbar() {
 
 						<ul className={styles.app__navbar_smallscreen_ul}>
 							<li className={styles.navbar__li_smallscreen}>
-								<Link to="/home">Home</Link>
+								<NavLink to="/">Home</NavLink>
 							</li>
 							<li className={styles.navbar__li_smallscreen}>
-								<Link to="/about">Features</Link>
+								<NavLink to="/about">Features</NavLink>
 							</li>
 							<li className={styles.navbar__li_smallscreen}>
-								<Link to="/menu">Quote</Link>
+								<NavLink to="/menu">Quote</NavLink>
 							</li>
 							<li className={styles.navbar__li_smallscreen}>
-								<Link to="/awards">Awards</Link>
+								<NavLink to="/awards">Awards</NavLink>
 							</li>
 							<li className={styles.navbar__li_smallscreen}>
-								<Link to="/contact">Contact</Link>
+								<NavLink to="/contact">Contact</NavLink>
 							</li>
 						</ul>
 					</div>

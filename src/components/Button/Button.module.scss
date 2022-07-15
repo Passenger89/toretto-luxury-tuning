@@ -14,7 +14,8 @@
 	outline: none;
 	cursor: pointer;
 
-	&:hover {
+	&:hover,
+	&:focus {
 		background: var.$color-halogen;
 		box-shadow: var.$color-halogen 0px 10px 10px -5px,
 			var.$color-halogen 0px 10px 10px -5px;

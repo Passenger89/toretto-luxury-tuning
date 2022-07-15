@@ -1,4 +1,3 @@
-import bg from '../assets/bg.png';
 import gallery01 from '../assets/gallery01.png';
 import gallery02 from '../assets/gallery02.png';
 import gallery03 from '../assets/gallery03.png';
@@ -7,7 +6,6 @@ import gallery05 from '../assets/gallery05.png';
 import gallery06 from '../assets/gallery06.png';
 import gallery07 from '../assets/gallery07.png';
 import gallery08 from '../assets/gallery08.png';
-import overlaybg from '../assets/overlaybg.png';
 import award01 from '../assets/award01.png';
 import award02 from '../assets/award02.png';
 import award03 from '../assets/award03.png';
@@ -23,8 +21,6 @@ import fuelinjector from '../assets/fuelinjector.png';
 import trophy from '../assets/trophy.png';
 
 export default {
-	bg,
-	overlaybg,
 	award01,
 	award02,
 	award03,

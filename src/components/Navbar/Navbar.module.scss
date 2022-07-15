@@ -1,5 +1,9 @@
 @use '../../scss/variables' as var;
 
+a {
+	text-decoration: none;
+}
+
 .app__navbar {
 	width: 100%;
 	display: flex;
@@ -66,6 +70,11 @@
 			background-color: var.$color-gray;
 		}
 	}
+}
+
+.active {
+	color: var.$color-halogen !important;
+	text-shadow: none !important;
 }
 
 .app__navbar_smallscreen {
