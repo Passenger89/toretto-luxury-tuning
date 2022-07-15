@@ -50,7 +50,7 @@ function Gallery() {
 							className={`${styles.gallery_images_card} flex__center`}
 							key={`gallery_image-${index + 1}`}
 						>
-							<img src={image} alt="gallery" />
+							<img src={image} alt="gallery" loading="lazy" />
 							<BsInstagram className={styles.gallery_image_icon} />
 						</div>
 					))}

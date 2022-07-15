@@ -1,24 +1,24 @@
-import gallery01 from '../assets/gallery01.png';
-import gallery02 from '../assets/gallery02.png';
-import gallery03 from '../assets/gallery03.png';
-import gallery04 from '../assets/gallery04.png';
-import gallery05 from '../assets/gallery05.png';
-import gallery06 from '../assets/gallery06.png';
-import gallery07 from '../assets/gallery07.png';
-import gallery08 from '../assets/gallery08.png';
-import award01 from '../assets/award01.png';
-import award02 from '../assets/award02.png';
-import award03 from '../assets/award03.png';
-import award05 from '../assets/award05.png';
+import gallery01 from '../assets/gallery01.webp';
+import gallery02 from '../assets/gallery02.webp';
+import gallery03 from '../assets/gallery03.webp';
+import gallery04 from '../assets/gallery04.webp';
+import gallery05 from '../assets/gallery05.webp';
+import gallery06 from '../assets/gallery06.webp';
+import gallery07 from '../assets/gallery07.webp';
+import gallery08 from '../assets/gallery08.webp';
+import award01 from '../assets/award01.webp';
+import award02 from '../assets/award02.webp';
+import award03 from '../assets/award03.webp';
+import award05 from '../assets/award05.webp';
 
-import carbg from '../assets/car-bg.png';
+import carbg from '../assets/car-bg.webp';
 import mainlogo from '../assets/logo.svg';
-import nitron from '../assets/Nitron.png';
-import turbocharger from '../assets/Turbocharger.png';
-import efi from '../assets/efituning.png';
-import datalogging from '../assets/datalogging.png';
-import fuelinjector from '../assets/fuelinjector.png';
-import trophy from '../assets/trophy.png';
+import nitron from '../assets/nitron.webp';
+import turbocharger from '../assets/turbocharger.webp';
+import efi from '../assets/efituning.webp';
+import datalogging from '../assets/datalogging.webp';
+import fuelinjector from '../assets/fuelinjector.webp';
+import trophy from '../assets/trophy.webp';
 
 export default {
 	award01,

@@ -7,8 +7,8 @@
 	align-items: center;
 	padding: 1rem;
 	margin-inline: auto;
+	min-width: 20rem;
 
-	width: 31.25rem;
 	margin-top: 3rem;
 	cursor: pointer;
 	transition: 0.3s ease;
@@ -21,6 +21,12 @@
 
 	&_content {
 		text-align: center;
+	}
+
+	.article_image {
+		width: 200px;
+		height: 200px;
+		margin-inline: auto;
 	}
 }
 

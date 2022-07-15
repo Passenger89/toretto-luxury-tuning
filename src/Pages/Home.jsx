@@ -15,7 +15,7 @@ function Home() {
 			<AboutUs />
 			<TechArticles />
 			<Intro />
-			<Laurels id="awards" />
+			<Laurels />
 			<Gallery />
 			<FindUs />
 		</div>

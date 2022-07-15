@@ -8,7 +8,7 @@ import styles from './Laurels.module.scss';
 function AwardCard({ award: { imgUrl, title, subtitle } }) {
 	return (
 		<div className={styles.laurels_awards_card}>
-			<img src={imgUrl} alt="award" />
+			<img className={styles.award_image} src={imgUrl} alt="award" />
 			<div className={styles.laurels_awards_card_content}>
 				<p className="p__opensans">{title}</p>
 				<p className="p__cormorant">{subtitle}</p>
@@ -19,7 +19,10 @@ function AwardCard({ award: { imgUrl, title, subtitle } }) {
 
 function Laurels() {
 	return (
-		<div className="app__bg app__wrapper section__padding" id="awards">
+		<div
+			className={`${styles.laurels} app__bg app__wrapper section__padding`}
+			id="awards"
+		>
 			<div className={styles.wrapper_info}>
 				<h1 className="headtext__cormorant_white">Our Laurels</h1>
 
@@ -31,7 +34,11 @@ function Laurels() {
 			</div>
 
 			<div className={styles.wrapper_img}>
-				<img src={images.trophy} alt="laurels" />
+				<img
+					className={styles.trophy_image}
+					src={images.trophy}
+					alt="laurels"
+				/>
 			</div>
 		</div>
 	);
@@ -41,7 +48,4 @@ export default Laurels;
 
 AwardCard.propTypes = {
 	award: PropTypes.objectOf(PropTypes.string).isRequired,
-	imgUrl: PropTypes.string.isRequired,
-	title: PropTypes.string.isRequired,
-	subtitle: PropTypes.string.isRequired,
 };

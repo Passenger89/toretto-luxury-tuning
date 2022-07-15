@@ -8,7 +8,7 @@ function Card({ article: { imgUrl, title, path } }) {
 	return (
 		<div className={styles.article_card}>
 			<Link to={path}>
-				<img src={imgUrl} alt="article" />
+				<img className={styles.article_image} src={imgUrl} alt="article" />
 				<div className={styles.article_card_content}>
 					<p className="p__cormorant_black">{title}</p>
 				</div>

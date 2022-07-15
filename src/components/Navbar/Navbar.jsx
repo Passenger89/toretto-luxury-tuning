@@ -18,7 +18,7 @@ function Navbar() {
 	return (
 		<nav className={styles.app__navbar}>
 			<div className={styles.app__navbar_logo}>
-				<img src={images.mainlogo} alt="app logo" />
+				<img className={styles.mainlogo} src={images.mainlogo} alt="app logo" />
 			</div>
 			<ul className={styles.app__navbar_ul}>
 				<li className={styles.app__navbar_li}>

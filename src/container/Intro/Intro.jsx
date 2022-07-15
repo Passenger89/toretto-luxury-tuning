@@ -35,6 +35,7 @@ function Intro() {
 			<div className={`${styles.video__overlay} flex__center`}>
 				<div
 					role="button"
+					aria-label="Play Video"
 					tabIndex={0}
 					className={`${styles.video__overlay_circle} flex__center`}
 					onClick={handleVideo}

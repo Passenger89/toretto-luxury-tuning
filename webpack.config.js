@@ -8,6 +8,7 @@ module.exports = {
 	},
 	output: {
 		filename: '[name][contenthash].bundle.js', // A custom name for compiled code.
+		chunkFilename: '[name][contenthash].bundle.js', // Provides template for naming code-split bundles
 		path: path.resolve(__dirname, 'dist'), // The location you would like your bundled code to be placed in.
 		clean: true, // Prevents creation of mulitple files in dist. Replaces original.
 		assetModuleFilename: '[name][ext]', // Prevents renaming of assets.
@@ -47,7 +48,7 @@ module.exports = {
 				},
 			},
 			{
-				test: /\.(png|svg|jpg|jpeg|gif)$/i,
+				test: /\.(webp|png|svg|jpg|jpeg|gif)$/i,
 				type: 'asset/resource',
 			},
 			{

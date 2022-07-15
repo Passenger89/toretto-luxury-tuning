@@ -6,17 +6,9 @@
 		z-index: 999;
 		bottom: 10px;
 		left: 10px;
-		padding: 1rem;
-		width: 25px;
-		height: 25px;
-		font-size: 50px;
-		background-color: var.$color-white;
-		color: var.$color-black;
-		border: 2px solid var.$color-black;
 
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		border-radius: 10px;
+		.icon {
+			color: var.$color-halogen;
+		}
 	}
 }

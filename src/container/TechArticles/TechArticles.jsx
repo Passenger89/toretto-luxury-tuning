@@ -17,8 +17,8 @@ function TechArticles() {
 			</div>
 
 			<div className={styles.techArticles_cards}>
-				{data.articles.map((article) => (
-					<Card article={article} />
+				{data.articles.map((article, i) => (
+					<Card article={article} key={`card${i + 1}`} />
 				))}
 			</div>
 		</div>

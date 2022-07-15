@@ -22,7 +22,11 @@ function AboutUs() {
 				</div>
 
 				<div className={`${styles.aboutus_content_nitron} flex__center`}>
-					<img src={images.nitron} alt="about_nitron" />
+					<img
+						className={styles.nitron}
+						src={images.nitron}
+						alt="about_nitron"
+					/>
 				</div>
 
 				<div className={`${styles.aboutus_content_history}`}>
