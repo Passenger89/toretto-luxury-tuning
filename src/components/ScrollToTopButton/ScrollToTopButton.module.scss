@@ -1,13 +1,18 @@
+@use '../../scss/variables' as var;
+
 .wrapper {
 	.button {
 		position: fixed;
 		z-index: 999;
-		bottom: 25px;
-		left: 25px;
-		padding: 0.5rem;
-		aspect-ratio: 1/2;
+		bottom: 10px;
+		left: 10px;
+		padding: 1rem;
+		width: 25px;
+		height: 25px;
 		font-size: 50px;
-		background-color: hsl(180, 2%, 92%);
+		background-color: var.$color-white;
+		color: var.$color-black;
+		border: 2px solid var.$color-black;
 
 		display: flex;
 		align-items: center;
